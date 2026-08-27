@@ -113,6 +113,7 @@
   environment.systemPackages = with pkgs; [
     nautilus
     libreoffice
+    discord
 ];
 
   programs.firefox.enable = true;
