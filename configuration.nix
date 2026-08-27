@@ -9,6 +9,7 @@
       ./extra-configs/brightness.nix
       ./extra-configs/power.nix
       ./extra-configs/storage.nix
+      ./extra-configs/xwayland.nix
     ];
 
   #==============#
@@ -113,7 +114,7 @@
   environment.systemPackages = with pkgs; [
     nautilus
     libreoffice
-    discord
+    vesktop
 ];
 
   programs.firefox.enable = true;
