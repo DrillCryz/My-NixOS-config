@@ -34,4 +34,10 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+  #===========#
+  #= Flatpak =#
+  #===========#
+
+  services.flatpak.enable = false;
+
 }
