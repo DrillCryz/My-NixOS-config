@@ -2,10 +2,8 @@
 
 Configuración personal de mi sistema NixOS.
 
- ## ===================================================================================== ##
  ## = [⚠️] Esta configuración está hecha específicamente para mi hardware y mi entorno. = ##
  ## = No recomiendo utilizarla directamente en otro sistema sin revisar y adaptar       = ##
- ## ===================================================================================== ##
 
 ## Hardware
 Laptop: Asus Vivobook Go 14 E1404FA
