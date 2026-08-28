@@ -4,12 +4,14 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./extra-configs/extra-config.nix
-      ./extra-configs/niri.nix
-      ./extra-configs/brightness.nix
-      ./extra-configs/power.nix
-      ./extra-configs/storage.nix
-      ./extra-configs/xwayland.nix
+      ./System-Modules/audio.nix
+      ./System-Modules/bluetooth.nix
+      ./System-Modules/niri.nix
+      ./System-Modules/brightness.nix
+      ./System-Modules/power.nix
+      ./System-Modules/storage.nix
+      ./System-Modules/xwayland.nix
+      ./System-Modules/games.nix
     ];
 
   #==============#
