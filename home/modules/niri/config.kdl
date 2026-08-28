@@ -29,6 +29,8 @@ input {
     position x=1280 y=0
 }
 
+prefer-no-csd
+
 layout {
     gaps 16
 
@@ -44,10 +46,9 @@ layout {
 
     default-column-width { proportion 0.5; }
     focus-ring {
-        width 4
-
-        active-color "#7fc8ff"
-
+            off
+	width 4
+        active-color "#ff0000"
         inactive-color "#505050"
 
         // You can also use gradients. They take precedence over solid colors.
@@ -67,24 +68,11 @@ layout {
     }
 
     border {
-        off
 
-        width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
+        width 2.5
+        active-color "#ff0000"
+ 	inactive-color "#505050"
 
-        urgent-color "#9b0000"
-
-    }
-
-    shadow {
-        softness 30
-
-        spread 5
-
-        offset x=0 y=5
-
-        color "#0007"
     }
 
     struts {
@@ -138,8 +126,8 @@ window-rule {
 }
 
 
-/-window-rule {
-    geometry-corner-radius 12
+  window-rule {
+    geometry-corner-radius 14
     clip-to-geometry true
 }
 
@@ -215,8 +203,6 @@ binds {
 
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
@@ -262,8 +248,11 @@ binds {
     Mod+Ctrl+8 { move-column-to-workspace 8; }
     Mod+Ctrl+9 { move-column-to-workspace 9; }
 
-    Mod+BracketLeft  { consume-or-expel-window-left; }
-    Mod+BracketRight { consume-or-expel-window-right; }
+   // Mod+BracketLeft  { consume-or-expel-window-left; }
+   // Mod+BracketRight { consume-or-expel-window-right; }
+
+    Mod+U { consume-or-expel-window-right; }
+    Mod+I { consume-or-expel-window-right; }
 
     Mod+Comma  { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
