@@ -8,6 +8,7 @@
     btop
     bat
     vim
+    neovim
     git
     yazi
   ];
