@@ -7,12 +7,14 @@
   programs.home-manager.enable = true;
 
   imports = [
-    ./terminal.nix
     ./modules/niri.nix
     ./modules/noctalia.nix
- ];
+    ./modules/terminal.nix
+    ./modules/fish.nix
+    ./modules/fastfetch.nix
+    ./modules/ghostty.nix
 
-  programs.fish.enable = true;
+ ];
 
   #================#
   #= Sistema-Home =#
