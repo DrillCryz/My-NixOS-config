@@ -115,6 +115,14 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id=r#"^com\.mitchellh\.ghostty$"#
+
+     background-effect {
+	     blur true
+     }
+}
+
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#

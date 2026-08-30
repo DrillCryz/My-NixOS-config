@@ -6,7 +6,7 @@
 
     settings = {
       theme = "noctalia";
-      background-opacity = 0.90;
+      background-opacity = 0.60;
       gtk-titlebar = false;
       font-size = 10;
     };
