@@ -117,10 +117,18 @@
     nautilus
     libreoffice
     vesktop
+    discord
+    krita
+    obs-studio
+    vlc
 ];
 
   programs.firefox.enable = true;
   programs.fish.enable = true;
+  programs.appimage = { 
+    enable = true;
+    binfmt = true;
+};
 
   #===========#
   #= Sistema =#
