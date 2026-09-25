@@ -6,12 +6,13 @@
       ./hardware-configuration.nix
       ./System-Modules/audio.nix
       ./System-Modules/bluetooth.nix
-      ./System-Modules/niri.nix
       ./System-Modules/brightness.nix
+      ./System-Modules/flatpak.nix
+      ./System-Modules/games.nix
+      ./System-Modules/niri.nix
       ./System-Modules/power.nix
       ./System-Modules/storage.nix
       ./System-Modules/xwayland.nix
-      ./System-Modules/games.nix
     ];
 
   #==============#
@@ -115,12 +116,8 @@
 
   environment.systemPackages = with pkgs; [
     nautilus
-    libreoffice
-    vesktop
     discord
-    krita
-    obs-studio
-    vlc
+
 ];
 
   programs.firefox.enable = true;

@@ -7,12 +7,15 @@
   programs.home-manager.enable = true;
 
   imports = [
+    ./modules/arte.nix
+    ./modules/fastfetch.nix
+    ./modules/fish.nix
+    ./modules/ghostty.nix
     ./modules/niri.nix
     ./modules/noctalia.nix
+    ./modules/ofimatica.nix
     ./modules/terminal.nix
-    ./modules/fish.nix
-    ./modules/fastfetch.nix
-    ./modules/ghostty.nix
+    ./modules/video.nix
 
  ];
 

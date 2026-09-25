@@ -2,6 +2,10 @@
 
 {
 
+  environment.systemPackages = with pkgs; [
+    prismlauncher
+  ];
+
   #=========#
   #= Steam =#
   #=========#
@@ -11,11 +15,4 @@
     remotePlay.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-
-  #===========#
-  #= Flatpak =#
-  #===========#
-
-  services.flatpak.enable = true;
-
 }
