@@ -9,6 +9,7 @@
       ./System-Modules/brightness.nix
       ./System-Modules/flatpak.nix
       ./System-Modules/games.nix
+      ./System-Modules/java.nix
       ./System-Modules/niri.nix
       ./System-Modules/power.nix
       ./System-Modules/storage.nix

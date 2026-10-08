@@ -142,6 +142,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Run an Application: nautilus" { spawn "nautilus"; }
     Mod+B hotkey-overlay-title="Run Firefox" { spawn "firefox"; }
+    Mod+Y { spawn "yazi"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
