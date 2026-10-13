@@ -9,7 +9,7 @@
       ./System-Modules/brightness.nix
       ./System-Modules/flatpak.nix
       ./System-Modules/games.nix
-      ./System-Modules/java.nix
+      ./System-Modules/jdk.nix
       ./System-Modules/niri.nix
       ./System-Modules/power.nix
       ./System-Modules/storage.nix
@@ -118,7 +118,7 @@
   environment.systemPackages = with pkgs; [
     nautilus
     discord
-
+    feh
 ];
 
   programs.firefox.enable = true;

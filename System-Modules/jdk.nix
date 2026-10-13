@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+  #=======#
+  #= JDK =#
+  #=======#
 
   environment.systemPackages = with pkgs; [
     jdk17

@@ -1,12 +1,6 @@
 { pkgs, ... }:
 
 {
-
-  environment.systemPackages = with pkgs; [
-    prismlauncher
-    modrinth-app
-  ];
-
   #=========#
   #= Steam =#
   #=========#
@@ -16,4 +10,9 @@
     remotePlay.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    prismlauncher
+    modrinth-app
+  ];
 }
